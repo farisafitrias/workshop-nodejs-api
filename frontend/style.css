@@ -1,0 +1,101 @@
+/* =========================================
+   Style dasar body
+   ========================================= */
+body {
+    background-color: #f5f7fb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   Custom style untuk card form
+   ========================================= */
+.form-card {
+    border: none;
+    border-radius: 16px;
+
+    /* Efek transisi agar animasi halus */
+    transition: transform 0.3s ease;
+}
+
+/* Efek hover pada card */
+.form-card:hover {
+    transform: translateY(-4px);
+}
+
+
+/* =========================================
+   Header tabel custom
+   ========================================= */
+.table-header {
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* Memastikan teks header putih */
+.table-header th {
+    color: white;
+}
+
+
+/* =========================================
+   Efek hover pada isi tabel
+   ========================================= */
+.table tbody tr {
+
+    /* Animasi transisi */
+    transition: all 0.2s ease;
+}
+
+/* Saat mouse diarahkan ke baris tabel */
+.table tbody tr:hover {
+    background-color: #eef4ff;
+    transform: scale(1.01);
+}
+
+
+/* =========================================
+   Style tombol submit
+   ========================================= */
+.btn-primary {
+
+    /* Membuat tombol lebih halus */
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+}
+
+/* Efek hover tombol */
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   Style alert notifikasi
+   ========================================= */
+.alert {
+
+    /* Membuat sudut alert lebih smooth */
+    border-radius: 12px;
+
+    /* Animasi muncul */
+    animation: fadeIn 0.4s ease;
+}
+
+
+/* =========================================
+   Animasi fade in sederhana
+   ========================================= */
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
